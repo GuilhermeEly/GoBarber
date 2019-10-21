@@ -56,7 +56,7 @@ class AppointmentController {
     }
 
     const appointment = await Appointment.create({
-      date: JSON.stringify(hourStart),
+      date: hourStart,
       user_id: req.userId,
       provider_id,
     });
